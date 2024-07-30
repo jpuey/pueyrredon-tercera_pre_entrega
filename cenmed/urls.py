@@ -7,6 +7,10 @@ urlpatterns = [
     path("pacientes", pacientes, name= "pacientes"),
     path("habitaciones", habitaciones, name= "habitaciones"),
     path("medicamentos", medicamentos, name= "medicamentos"),
+    path("form-medico", medicoFormulario, name="form-medico"),
+    path("form-habi", habitacionFormulario, name="form-habi"),
+    path("form-pacientes", pacientesFormulario, name="form-pacientes"),
+    path("form-meds", medsFormulario, name="form-meds")
 ]
 
 
