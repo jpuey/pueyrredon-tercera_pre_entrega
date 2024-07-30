@@ -1,0 +1,14 @@
+{% extends "cenmed/base.html"%}
+
+{% block title %}Asclepios | Inicio {% endblock %}
+
+{% block mutable %}
+<h1>BUSCAR PACIENTE</h1>
+<form action="cenmed/buscar/" method="GET">
+    <input type="nmber" name="identificacion" id="identificacion">
+    <input type="submit" value="Buscar">
+</form>
+{% endblock %}
+
+
+

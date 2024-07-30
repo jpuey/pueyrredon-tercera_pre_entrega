@@ -92,3 +92,10 @@ def medsFormulario(request):
             miFormulario = MedicamentoFormulario()
 
     return render(request, "cenmed/form-meds.html", {"miFormulario": miFormulario})
+
+def busquedaPaciente (request):
+    return render (request, "cenmed/busquedaPaciente.html")
+
+def buscar(request):
+    respuesta= f"Estoy buscando al Paciente con numero de identificacion: {request.GET ["identificacion"]}"
+    return HttpResponse(respuesta)
