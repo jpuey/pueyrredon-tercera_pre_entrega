@@ -16,7 +16,7 @@ class MedicamentoAdmin(admin.ModelAdmin):
 
 class HabitacionAdmin(admin.ModelAdmin):
     list_display= ("numero", "ocupado")
-    list_filter= ("nombre",)
+    list_filter= ("numero",)
 
 # Register your models here.
 admin.site.register(Medico, MedicoAdmin)
