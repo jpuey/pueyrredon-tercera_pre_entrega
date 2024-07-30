@@ -6,13 +6,13 @@ def inicio(request):
     return render(request,"cenmed/index.html") 
 
 def medicos(request):
-    return HttpResponse ("Esta es la vista de Medicos")
+    return render(request,"cenmed/medicos.html")
 
 def pacientes(request):
-    return HttpResponse ("Esta es la vista de Pacientess")
+    return render(request,"cenmed/pacientes.html")
 
 def habitaciones(request):
-    return HttpResponse ("Esta es la vista de habitaciones")
+    return render(request,"cenmed/habitaciones.html")
 
 def medicamentos(request):
-    return HttpResponse ("Esta es la vista de Medicamentos")
+    return render(request, "cenmed/medicamentos.html")
