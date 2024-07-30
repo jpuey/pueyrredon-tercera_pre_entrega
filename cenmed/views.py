@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def inicio(request):
-    return HttpResponse ("Esta es la vista de Inicio")
+    return render(request,"cenmed/index.html") 
 
 def medicos(request):
     return HttpResponse ("Esta es la vista de Medicos")
